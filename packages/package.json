@@ -1,0 +1,39 @@
+{
+  "name": "react-theme-snap",
+  "version": "1.0.0",
+  "private": false,
+  "license": "MIT",
+  "description": "A lightweight React package to easily add dark mode support with theme persistence, custom tokens. Plug-and-play with built-in context, hook — fully customizable for your UI.",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "react",
+    "theme",
+    "toggler",
+    "dark-mode",
+    "dark-theme-toggler"
+  ],
+  "author": "Zaid Achhwa",
+  "scripts": {
+    "dev": "",
+    "build": "tsup ./src/index.ts --format cjs,esm --dts --tsconfig tsconfig.app.json --external react,react-dom",
+    "lint": "eslint ."
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3",
+    "tsup": "^8.5.0",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6"
+  }
+}

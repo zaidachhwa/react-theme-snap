@@ -8,6 +8,10 @@ export interface ThemeProviderProps {
   tokens: {
     dark: ThemeTokens;
     light: ThemeTokens;
+    // solarized?: ThemeTokens;
+    // dracula?: ThemeTokens;
+    // cupcake?: ThemeTokens;
+    // pastel?: ThemeTokens;
   };
   className?: string;
   storageKey?: string;

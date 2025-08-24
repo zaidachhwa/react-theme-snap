@@ -1,3 +1,5 @@
+"use client";
+
 import { useEffect, useState } from "react";
 import type { ThemeProviderProps } from "../types";
 import { ThemeContext } from "../hooks/useDarkTheme";
@@ -7,7 +9,7 @@ export const ThemeProvider = ({
   tokens,
   storageKey = "is-dark",
 }: ThemeProviderProps) => {
-  const [isDark, setIsDark] = useState(() => {
+  const [isDark, setIsDark] = useState<boolean>(() => {
     const saved = localStorage.getItem(storageKey);
     return saved ? JSON.parse(saved) : false;
   });

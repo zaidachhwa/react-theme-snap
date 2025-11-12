@@ -10,7 +10,13 @@
 
 ```bash
 npm install react-theme-snap
+
+or
+
+yarn install react-theme-snap
 ```
+
+### SSR Safe
 
 ---
 
